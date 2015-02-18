@@ -1,0 +1,289 @@
+@charset "utf-8";
+/*========================================================================================
+CSS Styles for Rodrigo Arka.
+author:    Rodrigo Arka.
+website:   http://www.RodrigoArka.com
+========================================================================================*/
+/* IE6 e anteriores */
+* html #elemento { color: red }
+
+/* IE7 */
+*:first-child+html #elemento { color: red } 
+
+/* IE7, FF, Safari, Opera  */
+html>body #elemento { color: red }
+
+/* IE8, FF, Safari, Opera (Everything but IE 6,7) */
+html>/**/ body #elemento { color: red }
+
+/* Opera 9.27 e anteriores, safari 2 */
+html:first-child #elemento { color: red }
+
+/* Safari 2-3 */
+html[xmlns*=""] body:last-child #elemento { color: red }
+
+/* safari 3+, chrome 1+, opera9+, ff 3.5+ */
+body:nth-of-type(1) #elemento { color: red }
+
+/* safari 3+, chrome 1+, opera9+, ff 3.5+ */
+body:first-of-type #elemento {  color: red }
+
+/* saf3+, chrome1+ */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+#elemento { color: red }
+}
+
+/* iPhone / mobile webkit */
+@media screen and (max-device-width: 480px) {
+#elemento { color: red }
+}
+
+/* Safari 2 - 3.1 */
+html[xmlns*=""]:root #elemento { color: red }
+
+/* Safari 2 - 3.1, Opera 9.25 */
+*|html[xmlns*=""] #elemento { color: red }
+
+/* Tudo menos IE6-8 */
+:root *> #elemento { color: red }
+
+/* IE7 */
+*+html #elemento {  color: red }
+
+/* Firefox somente. 1+ */
+#elemento,  x:-moz-any-link { color: red }
+
+/* Firefox 3.0+ */
+#elemento,  x:-moz-any-link, x:default { color: red }
+
+/* basic tags 
+========================================================================================*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+input,textarea,select { font-family: 'Raleway', sans-serif; color: #666; }
+.wrap { max-width: 800px; height: 1065px; /*margin: 0 auto;*/ background: #000 url(../imgs/ficha1.jpg) no-repeat; position: relative; }
+
+
+
+/* titulos 
+========================================================================================*/
+h1,h2,h3,h4,h5,h6 { font-weight: normal; text-transform: uppercase; }
+
+/* links 
+========================================================================================*/
+a { color: #0367a6; text-decoration: none; cursor: pointer; }
+a:hover { }
+
+/* uteis 
+========================================================================================*/
+
+
+.comecar  { width: 232px; height: 68px; display: block; background-position: -675px -206px; font-size: 27px; text-transform: uppercase; }
+.arte     { width: 655px; height: 421px; display: block; background-position: 0 -226px; }
+.num      { width: 35px; height: 35px; display: inline-block; background-position: -926px -206px; text-align: center; }
+.diminuir { width: 21px; height: 23px; display: block; background-position: -675px -293px; }
+.somar    { width: 21px; height: 23px; display: block; background-position: -713px -293px; }
+
+
+#pontos.h0  { background: url(../imgs/ficha/classic800/pontos0.png) no-repeat 0 0 ; width: 55px; height: 12px; font-size: 0px; display: inline-table; margin: 3px 0 0 0;}
+#pontos.h1  { background: url(../imgs/ficha/classic800/pontos1.png) no-repeat 0 0 ; width: 55px; font-size: 0px; display: inline-table; height: 12px; margin: 3px 0 0 0;}
+#pontos.h2  { background: url(../imgs/ficha/classic800/pontos2.png) no-repeat 0 0 ; width: 55px; height: 12px; font-size: 0px; display: inline-table; margin: 3px 0 0 0;}
+#pontos.h3  { background: url(../imgs/ficha/classic800/pontos3.png) no-repeat 0 0 ; width: 55px; height: 12px; font-size: 0px; display: inline-table; margin: 3px 0 0 0;}
+#pontos.h4  { background: url(../imgs/ficha/classic800/pontos4.png) no-repeat 0 0 ; width: 55px; height: 12px; font-size: 0px; display: inline-table; margin: 3px 0 0 0;}
+#pontos.h5  { background: url(../imgs/ficha/classic800/pontos5.png) no-repeat 0 0 ; width: 55px; height: 12px; font-size: 0px; display: inline-table; margin: 3px 0 0 0;}
+
+#pontos.p0  { background: url(../imgs/ficha/classic800/p0.png) no-repeat 0 0 ; width: 220px; height: 14px; font-size: 0px; display: inline-table;}
+#pontos.p1  { background: url(../imgs/ficha/classic800/p1.png) no-repeat 0 0 ; width: 220px; height: 14px; font-size: 0px; display: inline-table;}
+#pontos.p2  { background: url(../imgs/ficha/classic800/p2.png) no-repeat 0 0 ; width: 220px; height: 14px; font-size: 0px; display: inline-table;}
+#pontos.p3  { background: url(../imgs/ficha/classic800/p3.png) no-repeat 0 0 ; width: 220px; height: 14px; font-size: 0px; display: inline-table;}
+#pontos.p4  { background: url(../imgs/ficha/classic800/p4.png) no-repeat 0 0 ; width: 220px; height: 14px; font-size: 0px; display: inline-table;}
+#pontos.p5  { background: url(../imgs/ficha/classic800/p5.png) no-repeat 0 0 ; width: 220px; height: 14px; font-size: 0px; display: inline-table;}
+
+#pontos.p6  { background: url(../imgs/ficha/classic800/p6.png) no-repeat 0 0 ; width: 220px; height: 14px; font-size: 0px; display: inline-table;}
+#pontos.p7  { background: url(../imgs/ficha/classic800/p7.png) no-repeat 0 0 ; width: 220px; height: 14px; font-size: 0px; display: inline-table;}
+#pontos.p8  { background: url(../imgs/ficha/classic800/p8.png) no-repeat 0 0 ; width: 220px; height: 14px; font-size: 0px; display: inline-table;}
+#pontos.p9  { background: url(../imgs/ficha/classic800/p9.png) no-repeat 0 0 ; width: 220px; height: 14px; font-size: 0px; display: inline-table;}
+#pontos.p10  { background: url(../imgs/ficha/classic800/p10.png) no-repeat 0 0 ; width: 220px; height: 14px; font-size: 0px; display: inline-table;}
+
+.menos { 
+    background: url(../imgs/maisoumenos.png) no-repeat -5px -6px;
+    width: 15px;
+    height: 15px;
+    font-size: 0px;
+    float: left;
+    margin-right: 3px;
+}
+
+.mais { 
+    background: url(../imgs/maisoumenos.png) no-repeat -45px -6px;
+    width: 15px;
+    height: 15px;
+    font-size: 0px;
+    float: right;
+}
+
+
+
+.col1{ position: absolute; left: 186px; width: 100px;
+    
+}
+
+.col2{ position: absolute; left: 429px; width: 100px;
+    
+}
+.col3{ position: absolute; left: 670px; width: 100px;
+    
+}
+
+.col1 div, .col2 div, .col3 div{ margin-bottom: 1px; width: 92px; overflow: hidden; height: 18px;
+    
+}
+
+
+.outros .col1{ position: absolute; left: 49px; width: 217px;;
+    
+}
+
+.outros .col2{ position: absolute; left: 271px; width: 258px;
+    
+}
+    
+.outros .col2 div{ margin-bottom: 33px; width: 260px;
+    
+}
+
+.cabecalho  input, .cabecalho  select{
+    padding: 5px;
+   /* width: 620px; */
+    border: 1px solid #ccc;
+}
+
+.cabecalho    #nome {
+    position: absolute;
+    width: 160px;
+    top: 160px;
+    left: 110px;
+    height: 10px;
+}
+
+.cabecalho   #jogador{ position: absolute; top: 183px; left: 130px; width: 140px; height: 10px;;}
+
+.cabecalho   #natureza{ position: absolute; height: 20px; padding: 1px; top: 162px; left: 385px; width: 147px;}
+
+.cabecalho   #comportamento{position: absolute;
+height: 20px;
+padding: 1px;
+top: 184px;
+left: 435px;
+width: 97px;}
+.cabecalho   #clan{position: absolute;
+height: 20px;
+padding: 1px;
+top: 206px;
+left: 345px;
+width: 187px;}
+
+.cabecalho   #refugio{position: absolute;
+height: 15px;
+padding: 1px;
+top: 185px;
+left: 615px;
+width: 121px;}
+
+.cabecalho   #conceito{position: absolute;
+height: 15px;
+padding: 1px;
+top: 206px;
+left: 619px;
+width: 117px;}
+
+
+
+
+
+.criar{
+
+      background: url('../imgs/next.png') no-repeat 0 0;
+      width: 130px;
+      height: 40px;
+      position: absolute;
+      top: 80px;
+      left: 630px;
+}
+
+
+.atributos{
+      position: absolute;
+      top: 263px;
+      background: url('../imgs/atributos.jpg') no-repeat 0 0;
+      width: 800px;
+      height: 96px;
+      padding: 26px 0 0 0px;
+}
+
+
+#ordem_att{; left: 334px;; top: 295px;; position: absolute; }
+.habilidades { position: absolute; top: 383px; background: url('../imgs/habilidades.jpg') no-repeat 0 4px; width: 800px; height: 190px; padding: 26px 0 0 0px; }
+.vantagens { position: absolute; top: 626px; background: url('../imgs/vantagens.jpg') no-repeat 0 4px; width: 800px; height: 158px; padding: 26px 0 0 0px; }
+.vantagens .col3 div{
+  margin-bottom: 39px;
+}
+.disciplinas{
+  position: absolute;
+left: 103px;
+height: 100% !important;
+width: 138px !important;
+}
+.disciplinas .dt {
+  background: #fefefe;
+  width: 127px;
+  margin: 1px;
+  height: 13px;
+  color: #000;
+  font-size: 12px;
+  border: 1px solid #666;;
+}
+
+.outros { position: absolute; top: 852px; width: 800px; height: 158px; padding: 26px 0 0px 0px; margin-bottom: 90px;; }
